@@ -1,6 +1,6 @@
-package com.blub.mvplist.dao;
+package com.blub.mvplist.Animals.dao;
 
-import com.blub.mvplist.model.AnimalDto;
+import com.blub.mvplist.Animals.model.AnimalDto;
 import com.squareup.moshi.Json;
 
 import java.util.List;

@@ -1,6 +1,6 @@
-package com.blub.mvplist;
+package com.blub.mvplist.Animals;
 
-import com.blub.mvplist.model.AnimalDto;
+import com.blub.mvplist.Animals.model.AnimalDto;
 
 import java.util.List;
 

@@ -1,4 +1,4 @@
-package com.blub.mvplist.view;
+package com.blub.mvplist.Animals.view;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -8,12 +8,12 @@ import android.view.View;
 import android.widget.ProgressBar;
 import android.widget.Toast;
 
-import com.blub.mvplist.AnimalContract;
-import com.blub.mvplist.AnimalPresenter;
+import com.blub.mvplist.Animals.AnimalContract;
+import com.blub.mvplist.Animals.AnimalPresenter;
+import com.blub.mvplist.Animals.DaggerMainActivityComponent;
+import com.blub.mvplist.Animals.MainActivityModule;
+import com.blub.mvplist.Animals.model.AnimalDto;
 import com.blub.mvplist.R;
-import com.blub.mvplist.di.components.DaggerMainActivityComponent;
-import com.blub.mvplist.di.modules.MainActivityModule;
-import com.blub.mvplist.model.AnimalDto;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,4 +1,4 @@
-package com.blub.mvplist.model;
+package com.blub.mvplist.Animals.model;
 
 import com.squareup.moshi.Json;
 

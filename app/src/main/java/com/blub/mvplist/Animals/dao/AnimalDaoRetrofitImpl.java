@@ -1,7 +1,7 @@
-package com.blub.mvplist.dao;
+package com.blub.mvplist.Animals.dao;
 
+import com.blub.mvplist.Animals.model.AnimalDto;
 import com.blub.mvplist.App;
-import com.blub.mvplist.model.AnimalDto;
 import com.blub.mvplist.retro.RetrofitRequests;
 
 import java.util.List;

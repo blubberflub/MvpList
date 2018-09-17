@@ -1,4 +1,4 @@
-package com.blub.mvplist.di.modules;
+package com.blub.mvplist;
 
 import com.blub.mvplist.retro.RetrofitRequests;
 import com.squareup.moshi.Moshi;

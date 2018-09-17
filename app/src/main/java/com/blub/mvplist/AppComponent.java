@@ -1,10 +1,8 @@
-package com.blub.mvplist.di.components;
+package com.blub.mvplist;
 
 import android.app.Application;
 
-import com.blub.mvplist.App;
-import com.blub.mvplist.dao.AnimalDaoRetrofitImpl;
-import com.blub.mvplist.di.modules.NetModule;
+import com.blub.mvplist.Animals.dao.AnimalDaoRetrofitImpl;
 
 import javax.inject.Singleton;
 

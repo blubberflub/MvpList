@@ -1,9 +1,8 @@
-package com.blub.mvplist.di.modules;
+package com.blub.mvplist.Animals;
 
-import com.blub.mvplist.AnimalPresenter;
-import com.blub.mvplist.dao.AnimalDao;
-import com.blub.mvplist.dao.AnimalDaoRetrofitImpl;
-import com.blub.mvplist.view.MainActivity;
+import com.blub.mvplist.Animals.dao.AnimalDao;
+import com.blub.mvplist.Animals.dao.AnimalDaoRetrofitImpl;
+import com.blub.mvplist.Animals.view.MainActivity;
 
 import javax.inject.Singleton;
 

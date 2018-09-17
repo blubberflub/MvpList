@@ -1,7 +1,6 @@
-package com.blub.mvplist.di.components;
+package com.blub.mvplist.Animals;
 
-import com.blub.mvplist.di.modules.MainActivityModule;
-import com.blub.mvplist.view.MainActivity;
+import com.blub.mvplist.Animals.view.MainActivity;
 
 import javax.inject.Singleton;
 

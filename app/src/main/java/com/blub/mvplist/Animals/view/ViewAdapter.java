@@ -1,4 +1,4 @@
-package com.blub.mvplist.view;
+package com.blub.mvplist.Animals.view;
 
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
@@ -8,8 +8,8 @@ import android.view.ViewGroup;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import com.blub.mvplist.Animals.model.AnimalDto;
 import com.blub.mvplist.R;
-import com.blub.mvplist.model.AnimalDto;
 
 import java.util.List;
 
