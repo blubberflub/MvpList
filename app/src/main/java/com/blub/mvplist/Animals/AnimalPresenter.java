@@ -9,8 +9,8 @@ public class AnimalPresenter implements AnimalContract.Presenter {
     private AnimalContract.View mAnimalView;
     private AnimalDao mAnimalDao;
 
-    public AnimalPresenter(AnimalContract.View animalView,
-                           AnimalDao animalDao) {
+    AnimalPresenter(AnimalContract.View animalView,
+                    AnimalDao animalDao) {
         mAnimalView = animalView;
         mAnimalDao = animalDao;
     }
