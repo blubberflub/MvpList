@@ -4,6 +4,7 @@ import android.app.Application;
 
 import com.blub.mvplist.Animals.dao.AnimalDaoRetrofitImpl;
 
+import javax.inject.Named;
 import javax.inject.Singleton;
 
 import dagger.BindsInstance;
@@ -21,6 +22,10 @@ public interface AppComponent {
     interface Builder {
         @BindsInstance
         Builder application(Application application);
+
+        @BindsInstance
+        @Named("base_url")
+        Builder baseUrl(String baseUrl);
 
         Builder netModule(NetModule netModule);
 

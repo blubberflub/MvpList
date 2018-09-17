@@ -11,7 +11,6 @@ import android.widget.Toast;
 import com.blub.mvplist.Animals.AnimalContract;
 import com.blub.mvplist.Animals.AnimalPresenter;
 import com.blub.mvplist.Animals.DaggerMainActivityComponent;
-import com.blub.mvplist.Animals.MainActivityModule;
 import com.blub.mvplist.Animals.model.AnimalDto;
 import com.blub.mvplist.R;
 
@@ -45,9 +44,8 @@ public class MainActivity extends AppCompatActivity implements AnimalContract.Vi
 
         animalList = new ArrayList<>();
 
-        adapter = new ViewAdapter(animalList, (animal, view) -> {
-            Toast.makeText(this, animal.getSound(), Toast.LENGTH_SHORT).show();
-        });
+        adapter = new ViewAdapter(animalList, (animal, view) ->
+                Toast.makeText(this, animal.getSound(), Toast.LENGTH_SHORT).show());
 
         recyclerView = findViewById(R.id.recycler_view);
         recyclerView.setHasFixedSize(true);
@@ -56,7 +54,7 @@ public class MainActivity extends AppCompatActivity implements AnimalContract.Vi
 
         DaggerMainActivityComponent
                 .builder()
-                .mainActivityModule(new MainActivityModule(this))
+                .mainActivity(this)
                 .build()
                 .inject(this);
 

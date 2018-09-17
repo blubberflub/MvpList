@@ -11,11 +11,6 @@ import dagger.Provides;
 
 @Module
 public class MainActivityModule {
-    private MainActivity mMainActivity;
-
-    public MainActivityModule(MainActivity mainActivity) {
-        mMainActivity = mainActivity;
-    }
 
     @Provides
     @Singleton
@@ -25,7 +20,7 @@ public class MainActivityModule {
 
     @Provides
     @Singleton
-    AnimalPresenter provideAnimalPresenter(AnimalDao animalDao) {
-        return new AnimalPresenter(mMainActivity, animalDao);
+    AnimalPresenter provideAnimalPresenter(MainActivity mainActivity, AnimalDao animalDao) {
+        return new AnimalPresenter(mainActivity, animalDao);
     }
 }
